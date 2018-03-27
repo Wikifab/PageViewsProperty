@@ -35,8 +35,7 @@ class PageViewsPropertyUpdateJob extends Job {
 		if ( !$title instanceof Title ) {
 			throw new RuntimeException( 'Expected a title instance' );
 		}
-
-var_dump('Ruen 2nd Job');
+		
 		$job = new UpdateJob( $title );
 		$job->run();
 

@@ -7,13 +7,14 @@
 	"license-name": "GPL-2.0+",
 	"type": "other",
 	"AutoloadClasses": {
-		"PageViewsProperty": "PageViewsProperty_body.php",
+		"PageViewsProperty\\PageViewsProperty": "PageViewsProperty_body.php",
 		"PageViewsProperty\\Hooks": "PageViewsProperty.hooks.php",
 		"PageViewsProperty\\PageViewsPropertyUpdateJob": "PageViewsPropertyUpdate.php"
 	},
 	"JobClasses": {
 		"PageViewsPropertyUpdate": "PageViewsProperty\\PageViewsPropertyUpdateJob"
 	},
+	"callback": "PageViewsProperty\\Hooks::onExtension",
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
 		"remoteExtPath": "PageViewsProperty"

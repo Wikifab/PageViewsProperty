@@ -1,8 +1,12 @@
 <?php
 
+namespace PageViewsProperty;
+
 use SMW\DIProperty;
 use SMW\SemanticData;
 use SESP\AppFactory;
+use SMWDINumber;
+use GoogleAnalyticsMetricsHooks;
 
 class PageViewsProperty {
 
@@ -16,7 +20,7 @@ class PageViewsProperty {
 
 		$page = $appFactory->newWikiPage( $semanticData->getSubject()->getTitle() );
 		$count = self::getPageViewCount( $page );
-
+		
 		return new SMWDINumber($count);
 	}
 
