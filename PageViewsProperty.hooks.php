@@ -17,7 +17,7 @@ class Hooks {
 		$sespLocalPropertyDefinitions['_GOOGLE_ANALYTICS_VIEWS'] = [
 		    'id'    => '___GOOGLE_ANALYTICS_VIEWS',
 		    'type'  => '_num',
-		    'alias' => 'google-analytics-views-annotation-prop',
+		    'alias' => 'ga-views',
 		    'label' => 'Google Analytics Views',
 		    'callback'  => [ 'PageViewsProperty\PageViewsProperty', 'addAnnotation' ]
 		];

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Julien"
+		]
+	},
+	"ga-views": "Nombre de vues",
+	"pageviewsproperty-desc" : "Ajoute une propriété spéciale à l'extension Semantic Extra Secial Properties qui récupère le nombre de vues depuis Google Analytics."
+}

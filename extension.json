@@ -2,7 +2,7 @@
 	"name": "Page Views Property",
 	"author": "Julien",
 	"url": "https://www.mediawiki.org/wiki/Extension:GoogleAnalyticsPageViewsPropertyAnnotator",
-	"description": "Adds a new property annotator to Semantic Extra Special Properties which fetches page views counters from Google Analytics",
+	"descriptionmsg": "pageviewsproperty-desc",
 	"version": "1.0",
 	"license-name": "GPL-2.0+",
 	"type": "other",
@@ -10,6 +10,11 @@
 		"PageViewsProperty\\PageViewsProperty": "PageViewsProperty_body.php",
 		"PageViewsProperty\\Hooks": "PageViewsProperty.hooks.php",
 		"PageViewsProperty\\PageViewsPropertyUpdateJob": "PageViewsPropertyUpdate.php"
+	},
+	"MessagesDirs": {
+		"PageViewsProperty": [
+			"i18n"
+		]
 	},
 	"JobClasses": {
 		"PageViewsPropertyUpdate": "PageViewsProperty\\PageViewsPropertyUpdateJob"

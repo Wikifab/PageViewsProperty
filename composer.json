@@ -1,0 +1,8 @@
+{
+    "name": "wikifab/page-views-property",
+    "description": "page views counter with Google Analytics",
+    "type": "mediawiki-extension",
+    "require": {
+    	"wikifab/google-analytics-metrics" : "*"
+    }
+}
