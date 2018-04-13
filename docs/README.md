@@ -8,4 +8,4 @@ The label to be used is : Google Analytics Views
 
 ## Dependencies : 
 
-Require GoogleAnalyticsMetrics
+Require GoogleAnalyticsMetrics and SemanticExtraSpecialProperties
