@@ -20,8 +20,12 @@ class PageViewsProperty {
 
 		$page = $appFactory->newWikiPage( $semanticData->getSubject()->getTitle() );
 		$count = self::getPageViewCount( $page );
-		
-		return new SMWDINumber($count);
+
+		if($count) {
+			return new SMWDINumber($count);
+		} else {
+			return null;
+		}
 	}
 
 	private static function getPageViewCount( $page ) {
