@@ -24,12 +24,14 @@ class Hooks {
 	}
 
 	public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
+                global $wgReadOnly;
 
 		$jobParams = array();
 
 		$title = $skin->getTitle();
 
-		if($title){
+		if($title && ! $wgReadOnly){
+			// TODO : this is brutal : we should not launch a Jobs at each request !!!
 			$job = new PageViewsPropertyUpdateJob( $title, $jobParams );
 			JobQueueGroup::singleton()->push( $job ); // mediawiki >= 1.21
 		}
