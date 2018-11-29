@@ -25,6 +25,7 @@ class Hooks {
 	}
 
 	public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
+                global $wgReadOnly;
 
 		/*global $wgScriptPath, $wgArticlePath, $wgScript, $IP, $wgUploadDirectory, $wgServer, $wgUploadPath, $wgExtensionAssetsPath;
 
@@ -52,7 +53,6 @@ class Hooks {
 			self::setPagePropLastUpdated($out);
 		}
 	}
-
 
 	public static function setLastUpdated($output) {
 
