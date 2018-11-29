@@ -38,7 +38,7 @@ class Hooks {
 		var_dump($wgUploadPath);
 		var_dump($wgExtensionAssetsPath);*/
 
-		$lastUpdated = self::getPagePropLastUpdated($out);
+		$lastUpdated = self::getLastUpdated($out);
 		if (is_null($lastUpdated) || ($lastUpdated && self::needsRefresh($lastUpdated)) ) {
 
 			$jobParams = array();
@@ -50,7 +50,7 @@ class Hooks {
 				JobQueueGroup::singleton()->push( $job ); // mediawiki >= 1.21
 			}
 
-			self::setPagePropLastUpdated($out);
+			self::setLastUpdated($out);
 		}
 	}
 
