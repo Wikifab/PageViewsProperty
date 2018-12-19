@@ -21,7 +21,7 @@ class PageViewsProperty {
 		$page = $appFactory->newWikiPage( $semanticData->getSubject()->getTitle() );
 		$count = self::getPageViewCount( $page );
 
-		if($count) {
+		if(is_numeric($count)) {
 			return new SMWDINumber($count);
 		} else {
 			return null;
