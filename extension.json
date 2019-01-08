@@ -29,5 +29,8 @@
 			"PageViewsProperty\\Hooks::onBeforePageDisplay"
 		]
 	},
+	"config": {
+		"PageViewsPropertyRefreshDelayInterval": false
+	},
 	"manifest_version": 1
 }
